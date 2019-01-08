@@ -1,0 +1,19 @@
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+  - "7"
+  - "8"
+  - "9"
+  - "10"
+install:
+  - npm install
+script: npm run lint && npm test
+deploy:
+  provider: npm
+  email: development@hive.pt
+  api_key:
+    secure: BWmmJSgNL6Bp6f42t4n5ihiGuUjV+EjYcf4v8r8mfGHVYgxgb041flaXsWwWwe3HUtJEPqP7iVICPsOE2fL+TccNT4VM1CiQSsOMIY7BtFTzmAGuwnhD80qz0yL/G71wWEn8qon82N1akLUCR5KmFS5xHgHy+hgL/Gpq8pq+CtqA3ZZyhbAtFImBeS9iikJ5/NA+omGi8XdAl39lhU1PIfMRCFJe+JsEzjObOt7KF3l3NZdFE/HCmtP/KnPDxGDnCeUhUTkTQTPdd1LlpAJA1RUytgswYs1sJvG1kn+qd2zQWBMLJGd7lP3tkSL29CG7rKrVYNqBegjZT+1fzMXQWrVkoy/JvI6hvlKsrDoRldRXNUoc3Kg+R2HDcEoeEcO1tASGjFhx7TFpNlNRIMLtybKVqihZy27Dv9dMf18JxNOwf5lIKZ74SeXmSv6XAW3Zx0qF0LZrYmEbNiKZby7rT5FD1+ipC4UFkNB5E98rWXsHqaTxkHF/RRLIzN0ne1KyWn39KY1bDwNy77UvpzJxz2rgpfWh6kwYlKbkBxG7EYiTmoDjv4DTj177K4JdKMO4GvK8J59yJqGfBup7R9IuGO4FMrS41htbkpdS8GLlpZl+5dkVJRjfC98/XpZLXXYxvrYDb5YwstZJ2HoDfn59it6qjE5I4toingOLm9+xTTc=
+  on:
+    tags: true
+    node_js: "7"
