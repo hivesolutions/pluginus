@@ -1,14 +1,14 @@
 const pluginus = require("../");
 
 class ExamplePlugin extends pluginus.Plugin {
-    load() {
-        super.load();
+    async load() {
+        await super.load();
         console.info("loading");
     }
 
-    unload() {
+    async unload() {
         console.info("unloading");
-        super.unload();
+        await super.unload();
     }
 
     getCapabilities() {
