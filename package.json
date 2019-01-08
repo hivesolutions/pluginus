@@ -22,7 +22,7 @@
         "lib/**/*.js",
         "test/**/*.js"
     ],
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
         "lint": "eslint \"./**/*.js\"",
         "prettier": "prettier \"./**/*.{js,json}\" --write",
