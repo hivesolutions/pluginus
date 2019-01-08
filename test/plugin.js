@@ -6,6 +6,7 @@ describe("Plugin", function() {
         it("should create a new Plugin instance", async () => {
             const plugin = pluginus.Plugin.new();
             assert.strictEqual(plugin instanceof pluginus.Plugin, true);
+            assert.strictEqual(plugin.owner, undefined);
         });
     });
 });
