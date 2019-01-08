@@ -1,7 +1,7 @@
 {
     "name": "pluginus",
     "version": "0.1.0",
-    "description": "Simple Web App for headless functions",
+    "description": "Simple Javascript plugin system",
     "keywords": [
         "manager",
         "plugins"
