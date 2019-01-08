@@ -1,7 +1,6 @@
-const plugin = require("./plugin");
+const pluginus = require("../");
 
-class ExamplePlugin extends plugin.Plugin {
-
+class ExamplePlugin extends pluginus.Plugin {
     load() {
         super.load();
         console.info("loading");
@@ -19,11 +18,11 @@ class ExamplePlugin extends plugin.Plugin {
     }
 }
 
+ExamplePlugin.register();
+
 function main() {
-    manager = require("./manager");
-    ExamplePlugin.register();
-    manager.global.load();
-    manager.global.unload();
+    pluginus.global.load();
+    pluginus.global.unload();
 }
 
 main();
