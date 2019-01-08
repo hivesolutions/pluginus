@@ -20,12 +20,10 @@ class ExamplePlugin extends pluginus.Plugin {
 
 ExamplePlugin.register();
 
-function main() {
+(function main() {
     pluginus.global.load();
     pluginus.global.unload();
-}
-
-main();
+})();
 
 module.exports = {
     ExamplePlugin: ExamplePlugin
