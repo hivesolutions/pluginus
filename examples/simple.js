@@ -18,9 +18,9 @@ class ExamplePlugin extends pluginus.Plugin {
 
 ExamplePlugin.register();
 
-(function main() {
-    pluginus.load();
-    pluginus.unload();
+(async function main() {
+    await pluginus.load();
+    await pluginus.unload();
 })();
 
 module.exports = {
