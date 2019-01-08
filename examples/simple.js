@@ -1,28 +1,28 @@
 const pluginus = require("../");
 
 class ExamplePlugin extends pluginus.Plugin {
-    load() {
-        super.load();
-        console.info("loading");
-    }
+  load() {
+    super.load();
+    console.info("loading");
+  }
 
-    unload() {
-        console.info("unloading");
-        super.unload();
-    }
+  unload() {
+    console.info("unloading");
+    super.unload();
+  }
 
-    getCapabilities() {
-        return [pluginus.Capability.new("start")];
-    }
+  getCapabilities() {
+    return [pluginus.Capability.new("start")];
+  }
 }
 
 ExamplePlugin.register();
 
 (function main() {
-    pluginus.global.load();
-    pluginus.global.unload();
+  pluginus.global.load();
+  pluginus.global.unload();
 })();
 
 module.exports = {
-    ExamplePlugin: ExamplePlugin
+  ExamplePlugin: ExamplePlugin
 };
