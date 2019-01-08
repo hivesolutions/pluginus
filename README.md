@@ -1,4 +1,4 @@
-# Pluginus
+# [Pluginus](http://pluginus.hive.pt)
 
 Simple Javascript plugin system.
 
