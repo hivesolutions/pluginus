@@ -9,14 +9,21 @@ class PluginManager {
     load()  {
         const startPlugins = this.getPluginsByCapability("start");
         for (const plugin of startPlugins) {
-            loadPlugin(plugin);
+            this.loadPlugin(plugin);
         }
     }
 
-    unload()  {}
+    unload()  {
+        for (const pluginInstance of this.plugins) {
+            if (!pluginInstance.isLoaded()) {
+                continue;
+            }
+            this.unloadPlugin(pluginInstance);
+        }
+    }
 
     registerPlugin(pluginClass) {
-        const pluginInstance = pluginClass();
+        const pluginInstance = new pluginClass();
         this.plugins.push(pluginInstance);
         this.pluginsClass[pluginClass] = pluginInstance;
         for (const capability of pluginInstance.getCapabilities()) {
@@ -30,12 +37,16 @@ class PluginManager {
         pluginInstance.load();
     }
 
+    unloadPlugin(pluginInstance) {
+        pluginInstance.unload();
+    }
+
     getPluginsByCapability(capability) {
         return this.pluginsCapability[capability] || [];
     }
 }
 
 module.exports = {
-    manager: new PluginManager(),
+    global: new PluginManager(),
     PluginManager: PluginManager
 };
