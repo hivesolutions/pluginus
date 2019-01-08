@@ -1,2 +1,3 @@
-# pluginus
-Simple Javascript plugin system
+# Pluginus
+
+Simple Javascript plugin system.
