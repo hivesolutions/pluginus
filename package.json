@@ -19,7 +19,8 @@
     "files": [
         "index.js",
         "examples/**/*.js",
-        "lib/**/*.js"
+        "lib/**/*.js",
+        "test/**/*.js"
     ],
     "main": "app.js",
     "scripts": {
