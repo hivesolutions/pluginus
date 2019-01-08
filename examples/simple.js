@@ -14,7 +14,7 @@ class ExamplePlugin extends pluginus.Plugin {
     getCapabilities() {
         return [pluginus.Capability.new("start")];
     }
-} 
+}
 
 ExamplePlugin.register();
 
