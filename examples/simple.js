@@ -12,9 +12,7 @@ class ExamplePlugin extends pluginus.Plugin {
     }
 
     getCapabilities() {
-        return [{
-            name: "start"
-        }];
+        return [pluginus.Capability.new("start")];
     }
 }
 
