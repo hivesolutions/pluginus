@@ -31,16 +31,16 @@
         "upgrade": "npx sort-package-json && ncu -au"
     },
     "dependencies": {
-        "consola": "^2.3.2",
+        "consola": "^2.5.6",
         "hive-js-util": "^0.2.0"
     },
     "devDependencies": {
-        "eslint": "^5.12.0",
+        "eslint": "^5.15.1",
         "eslint-config-hive": "^0.1.7",
-        "mocha": "^5.2.0",
+        "mocha": "^6.0.2",
         "npm-check-updates": "^2.15.0",
-        "prettier": "^1.15.3",
+        "prettier": "^1.16.4",
         "prettier-config-hive": "^0.1.1",
-        "sort-package-json": "^1.17.1"
+        "sort-package-json": "^1.21.0"
     }
 }
