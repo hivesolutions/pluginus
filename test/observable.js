@@ -1,5 +1,5 @@
 const assert = require("assert");
-const pluginus = require("../");
+const pluginus = require("..");
 
 describe("Observable", function() {
     describe("#bind()", function() {

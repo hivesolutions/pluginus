@@ -1,4 +1,4 @@
-const pluginus = require("../");
+const pluginus = require("..");
 
 class ExamplePlugin extends pluginus.Plugin {
     async load() {

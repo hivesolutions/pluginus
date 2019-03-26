@@ -22,25 +22,37 @@
         "lib/**/*.js",
         "test/**/*.js"
     ],
-    "main": "index.js",
+    "main": "dist/pluginus.cjs.js",
+    "unpkg": "dist/pluginus.umd.js",
+    "module": "dist/pluginus.esm.js",
+    "browser": "dist/pluginus.umd.js",
     "scripts": {
+        "build": "rollup -c",
         "lint": "eslint \"./**/*.js\"",
         "prettier": "prettier \"./**/*.{js,json}\" --write",
         "start": "node app.js",
         "test": "mocha --recursive",
-        "upgrade": "npx sort-package-json && ncu -au"
+        "upgrade": "npx sort-package-json && ncu -au",
+        "watch": "rollup -c -w"
     },
     "dependencies": {
         "consola": "^2.5.7",
         "hive-js-util": "^0.2.0"
     },
     "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/polyfill": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
         "eslint": "^5.15.3",
         "eslint-config-hive": "^0.1.8",
         "mocha": "^6.0.2",
         "npm-check-updates": "^3.1.1",
         "prettier": "^1.16.4",
         "prettier-config-hive": "^0.1.1",
+        "rollup": "^1.7.3",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-commonjs": "^9.2.2",
+        "rollup-plugin-node-resolve": "^4.0.1",
         "sort-package-json": "^1.22.0"
     }
 }
