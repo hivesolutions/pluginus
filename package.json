@@ -43,7 +43,6 @@
     },
     "devDependencies": {
         "@babel/core": "^7.4.0",
-        "@babel/polyfill": "^7.4.0",
         "@babel/preset-env": "^7.4.2",
         "eslint": "^5.15.3",
         "eslint-config-hive": "^0.1.8",
