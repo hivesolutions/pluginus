@@ -26,9 +26,7 @@ export default [
             sourcemap: true
         },
         plugins: [
-            resolve({
-                browser: true
-            }),
+            resolve(),
             commonjs(),
             babel({
                 exclude: "node_modules/**",
