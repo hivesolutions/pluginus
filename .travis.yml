@@ -14,6 +14,7 @@ before_deploy: npm run build
 deploy:
   provider: npm
   email: development@hive.pt
+  skip_cleanup: true
   api_key:
     secure: Ehao7sB8K+vFJvJR73KxqMK7+MXO7ZlNOU/a1l2aO8QngpT4z7FgSbzUZ/My+WkOwcL+cLX5/zXn6TnX/LhBseUK1GHShaU8IZEVdDKKT9rhVg4mL7pYfYC5hh/f5efKveYJZ0dcE6bRegbw4/7q/wluYAd05gJOn1w1hkUQ7kjxEEcuK1DYhNgpHqrVs5m3ZKuuw/FJLTAuXtEl24ictZatIgXWknng9dYc52zhdTtp7FnOauRRsTgCsPT+Peqs7fZDKO4pTe3JrMqIcq2WB472oNss1m/vvT0SWdXBPnZNqQzyDJXLz11X86q+QnaAvs/y2yKrQVsNh8Ki4p9MW8cYpdjfb+Mq3l5m3mGfXzP8AHvVQDGlvg8mCsi1bhN9jyan/b9r7jsY8OUwqbrK9TrVD/m19lWSXS8OO7YzOVfqL+eyO/O3fkXXdnMjXwWhd1Wt9T8GI/4t5O+0NrvMo22EiWBxAp0uQKAGGrdErkUWW3CSiuSukrnoE1q2Hw1vL6sJgDO9c1565HRYXol1tLw6O8l5z3abHPBbY5JuIIlWdedJifqONnZPSXyOKLQyrCKtPQBX46TzSNZQuuug+szDtee/mRfB+86Djtq5MoiPNRqzxFQB42R2qlgO/vSNDKF78u0cI0gyThIIQbdmJd9wgQi2wfbY+QNS7wfjyx4=
   on:
