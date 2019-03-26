@@ -4,7 +4,7 @@
     "description": "Simple Javascript plugin system",
     "keywords": [
         "manager",
-        "plugins" 
+        "plugins"
     ],
     "homepage": "https://github.com/hivesolutions/pluginus#readme",
     "bugs": {
