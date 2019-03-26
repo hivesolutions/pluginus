@@ -18,6 +18,7 @@
     "author": "Hive Solutions",
     "files": [
         "index.js",
+        "dist/**/*",
         "examples/**/*.js",
         "lib/**/*.js",
         "test/**/*.js"
