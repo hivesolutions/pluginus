@@ -51,7 +51,6 @@
         "prettier": "^1.16.4",
         "prettier-config-hive": "^0.1.1",
         "rollup": "^1.7.3",
-        "rollup-plugin-babel": "^4.3.2",
         "rollup-plugin-commonjs": "^9.2.2",
         "rollup-plugin-node-resolve": "^4.0.1",
         "sort-package-json": "^1.22.0"
