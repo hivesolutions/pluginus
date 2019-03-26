@@ -1,6 +1,6 @@
 {
     "name": "pluginus",
-    "version": "0.1.12",
+    "version": "0.2.0",
     "description": "Simple Javascript plugin system",
     "keywords": [
         "manager",
