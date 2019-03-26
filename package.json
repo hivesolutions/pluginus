@@ -28,11 +28,12 @@
     "browser": "dist/pluginus.umd.js",
     "scripts": {
         "build": "rollup -c",
+        "example": "node examples/simple.js",
         "lint": "eslint \"./**/*.js\"",
         "prettier": "prettier \"./**/*.{js,json}\" --write",
         "start": "node app.js",
         "test": "mocha --recursive",
-        "upgrade": "npx sort-package-json && ncu -au",
+        "upgrade": "npx sort-package-json && ncu -u",
         "watch": "rollup -c -w"
     },
     "dependencies": {
