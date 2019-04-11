@@ -12,5 +12,16 @@ describe("Plugin", function() {
             assert.strictEqual(plugin.getName(), "Plugin");
             assert.strictEqual(plugin.getVersion(), "0.0.0");
         });
+
+        it("should register itself on the global manager instance", async () => {
+            pluginus.Plugin.register();
+            assert.strictEqual(pluginus.manager.plugins["Plugin"] !== null, true);
+        });
+
+        it("should register itself to the provided manager instance", async () => {
+            const manager = new pluginus.PluginManager();
+            pluginus.Plugin.register(manager);
+            assert.strictEqual(manager.plugins["Plugin"] !== null, true);
+        });
     });
 });
