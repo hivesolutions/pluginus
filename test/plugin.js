@@ -19,19 +19,23 @@ describe("Plugin", function() {
 
         it("should register itself on the global manager instance", async () => {
             assert.strictEqual(pluginus.manager.plugins.length, 0);
+            assert.strictEqual(Object.keys(pluginus.manager.pluginsName).length, 0);
 
             pluginus.Plugin.register();
             assert.strictEqual(pluginus.manager.plugins.length, 1);
             assert.strictEqual(pluginus.manager.plugins[0].name, "Plugin");
+            assert.strictEqual(pluginus.manager.pluginsName.Plugin.name, "Plugin");
         });
 
         it("should register itself to the provided manager instance", async () => {
             const manager = new pluginus.PluginManager();
             assert.strictEqual(manager.plugins.length, 0);
+            assert.strictEqual(Object.keys(manager.pluginsName).length, 0);
 
             pluginus.Plugin.register(manager);
             assert.strictEqual(manager.plugins.length, 1);
             assert.strictEqual(manager.plugins[0].name, "Plugin");
+            assert.strictEqual(manager.pluginsName.Plugin.name, "Plugin");
         });
     });
 });
