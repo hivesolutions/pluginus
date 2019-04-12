@@ -16,7 +16,9 @@ describe("Plugin", function() {
             assert.strictEqual(plugin.getName(), "Plugin");
             assert.strictEqual(plugin.getVersion(), "0.0.0");
         });
+    });
 
+    describe("#register()", function() {
         it("should register itself on the global manager instance", async () => {
             assert.strictEqual(pluginus.manager.plugins.length, 0);
             assert.strictEqual(Object.keys(pluginus.manager.pluginsName).length, 0);
