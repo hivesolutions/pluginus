@@ -31,29 +31,32 @@
         "build": "rollup -c",
         "example": "node examples/simple.js",
         "lint": "eslint \"./**/*.js\"",
+        "lint-all": "npm run lint",
+        "lint-fix": "eslint \"./**/*.js\" --fix",
         "prettier": "prettier \"./**/*.{js,json}\" --write",
+        "pretty": "npm run prettier && npm run lint-fix",
         "start": "node app.js",
         "test": "mocha --recursive",
         "upgrade": "npx sort-package-json && ncu -u",
         "watch": "rollup -c -w"
     },
     "dependencies": {
-        "consola": "^2.5.7",
-        "hive-js-util": "^0.2.0"
+        "consola": "^2.9.0",
+        "hive-js-util": "^0.2.1"
     },
     "devDependencies": {
-        "@babel/core": "^7.4.0",
-        "@babel/preset-env": "^7.4.2",
-        "eslint": "^5.15.3",
-        "eslint-config-hive": "^0.1.8",
-        "mocha": "^6.0.2",
-        "npm-check-updates": "^3.1.1",
-        "prettier": "^1.16.4",
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "eslint": "^5.16.0",
+        "eslint-config-hive": "^0.1.21",
+        "mocha": "^6.1.4",
+        "npm-check-updates": "^3.1.11",
+        "prettier": "^1.18.2",
         "prettier-config-hive": "^0.1.1",
-        "rollup": "^1.7.3",
+        "rollup": "^1.16.1",
         "rollup-plugin-babel": "^4.3.2",
-        "rollup-plugin-commonjs": "^9.2.2",
-        "rollup-plugin-node-resolve": "^4.0.1",
-        "sort-package-json": "^1.22.0"
+        "rollup-plugin-commonjs": "^10.0.0",
+        "rollup-plugin-node-resolve": "^5.0.3",
+        "sort-package-json": "^1.22.1"
     }
 }

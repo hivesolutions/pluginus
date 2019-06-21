@@ -10,10 +10,10 @@ describe("Plugin", function() {
         it("should create a new Plugin instance", async () => {
             const plugin = pluginus.Plugin.new();
             assert.strictEqual(plugin instanceof pluginus.Plugin, true);
-            assert.strictEqual(plugin.name, "Plugin");
+            assert.strictEqual(plugin.name, "plugin");
             assert.strictEqual(plugin.version, "0.0.0");
             assert.strictEqual(plugin.owner, undefined);
-            assert.strictEqual(plugin.getName(), "Plugin");
+            assert.strictEqual(plugin.getName(), "plugin");
             assert.strictEqual(plugin.getVersion(), "0.0.0");
         });
     });
@@ -25,8 +25,8 @@ describe("Plugin", function() {
 
             pluginus.Plugin.register();
             assert.strictEqual(pluginus.manager.plugins.length, 1);
-            assert.strictEqual(pluginus.manager.plugins[0].name, "Plugin");
-            assert.strictEqual(pluginus.manager.pluginsName.Plugin.name, "Plugin");
+            assert.strictEqual(pluginus.manager.plugins[0].name, "plugin");
+            assert.strictEqual(pluginus.manager.pluginsName.plugin.name, "plugin");
         });
 
         it("should register itself to the provided manager instance", async () => {
@@ -36,8 +36,8 @@ describe("Plugin", function() {
 
             pluginus.Plugin.register(manager);
             assert.strictEqual(manager.plugins.length, 1);
-            assert.strictEqual(manager.plugins[0].name, "Plugin");
-            assert.strictEqual(manager.pluginsName.Plugin.name, "Plugin");
+            assert.strictEqual(manager.plugins[0].name, "plugin");
+            assert.strictEqual(manager.pluginsName.plugin.name, "plugin");
         });
     });
 });
