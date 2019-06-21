@@ -1,6 +1,6 @@
 # [Pluginus](http://pluginus.hive.pt)
 
-Simple Javascript plugin system.
+Simple ES6 runtime plugin system inspired by [OSGi](https://www.osgi.org/).
 
 ## License
 
