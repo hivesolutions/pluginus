@@ -8,7 +8,7 @@ Pluginus is currently licensed under the [Apache License, Version 2.0](http://ww
 
 ## Build Automation
 
-[![Build Status](https://travis-ci.org/hivesolutions/pluginus.svg?branch=master)](https://travis-ci.org/hivesolutions/pluginus)
+[![Build Status](https://travis-ci.com/hivesolutions/pluginus.svg?branch=master)](https://travis-ci.com/hivesolutions/pluginus)
 [![Build Status GitHub](https://github.com/hivesolutions/pluginus/workflows/Main%20Workflow/badge.svg)](https://github.com/hivesolutions/pluginus/actions)
 [![npm Status](https://img.shields.io/npm/v/pluginus.svg)](https://www.npmjs.com/package/pluginus)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/)
