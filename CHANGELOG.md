@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-*
+* Support for more `plugin:${event}` event types in a global wide context
+* Added `longName` attribute to `Plugin`
 
 ### Changed
 

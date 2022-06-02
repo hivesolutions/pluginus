@@ -14,6 +14,7 @@ describe("Plugin", function() {
             assert.strictEqual(plugin.version, "0.0.0");
             assert.strictEqual(plugin.owner, undefined);
             assert.strictEqual(plugin.getName(), "plugin");
+            assert.strictEqual(plugin.getLongName(), "plugin");
             assert.strictEqual(plugin.getVersion(), "0.0.0");
         });
     });
@@ -26,7 +27,9 @@ describe("Plugin", function() {
             pluginus.Plugin.register();
             assert.strictEqual(pluginus.manager.plugins.length, 1);
             assert.strictEqual(pluginus.manager.plugins[0].name, "plugin");
+            assert.strictEqual(pluginus.manager.plugins[0].longName, "plugin");
             assert.strictEqual(pluginus.manager.pluginsName.plugin.name, "plugin");
+            assert.strictEqual(pluginus.manager.pluginsName.plugin.longName, "plugin");
         });
 
         it("should register itself to the provided manager instance", async () => {
@@ -37,7 +40,9 @@ describe("Plugin", function() {
             pluginus.Plugin.register(manager);
             assert.strictEqual(manager.plugins.length, 1);
             assert.strictEqual(manager.plugins[0].name, "plugin");
+            assert.strictEqual(manager.plugins[0].longName, "plugin");
             assert.strictEqual(manager.pluginsName.plugin.name, "plugin");
+            assert.strictEqual(manager.pluginsName.plugin.longName, "plugin");
         });
     });
 });
